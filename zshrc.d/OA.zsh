@@ -73,6 +73,6 @@ unset color_prompt force_color_prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=false
 export ZDOTDIR=~/.zsh
 if [[ -f ${ZDOTDIR}/ascii/ducky.txt ]]; then
-neofetch --source ${ZDOTDIR/}ascii/ducky.txt -L
+neofetch --source "${ZDOTDIR}/ascii/ducky.txt" -L
 fi
 
