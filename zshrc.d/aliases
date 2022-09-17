@@ -99,8 +99,6 @@ alias cdiwd='cd "$IWD"'
 alias dotf='cd "$DOTFILES"'
 alias dotfed='cd "$DOTFILES" && ${VISUAL:-${EDITOR:-vim}} .'
 
-# java
-alias setjavahome="export JAVA_HOME=\`/usr/libexec/java_home\`"
 
 # python
 alias py2='python2'

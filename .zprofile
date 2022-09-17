@@ -3,7 +3,7 @@
 #
 export SOPS_AGE_KEY_FILE="~/.config/sops/age/keys.txt"
 
-export KUBECONFIG="~/.kube/sbc.config"
+export KUBECONFIG="~/.kube/t3.config"
 export KUBECONFIG="~/.kube/sbc.config:${KUBECONFIG}"
 
 ### browser
@@ -47,6 +47,16 @@ export LESS="${LESS:--g -i -M -R -S -w -z-4}"
 # set the less input preprocessor
 if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
+fi
+
+# set PATH include .cargo if it exists 
+if [ -d "$HOME/.cargo/bin" ] ; then
+    PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+# set PATH include .arkade if it exists 
+if [ -d "$HOME/.arkade/bin" ] ; then
+    PATH="$HOME/.arkade/bin:$PATH"
 fi
 
 export HISTORY_IGNORE="(ls|bg|fg|pwd|q|p|exit|cd ..|cd -|pushd|popd)"

@@ -6,3 +6,7 @@ ln -s $ZDOTDIR/.zshenv ~/.zshenv
 
 # start a new zsh session
 zsh
+
+
+curl https://sh.rustup.rs -sSf | sh
+
