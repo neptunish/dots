@@ -15,7 +15,7 @@ done
 if [[ -f $ZDOTDIR/zshrc.d/aliases-"$(uname)" ]]; then
   source $ZDOTDIR/zshrc.d/aliases
   source $ZDOTDIR/zshrc.d/aliases-"$(uname)"
-else
+elif [[ -f $ZDOTDIR/zshrc.d/aliases ]];then
   source $ZDOTDIR/zshrc.d/aliases
 fi
 unset _zconf
