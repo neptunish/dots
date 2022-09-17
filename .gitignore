@@ -17,4 +17,4 @@
 *.zwc
 *.zwc.old
 ~*
-.DS_Store
+**.DS_Store
