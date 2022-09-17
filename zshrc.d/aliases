@@ -1,4 +1,4 @@
-lias -g H='| head'
+alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep -E'
 alias -g S='| sort'
